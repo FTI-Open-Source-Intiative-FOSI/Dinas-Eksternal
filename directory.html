@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Direktori BEM | FTI External Relations</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="project.html" class="logo">
+             <img
+            src="assets/images/logo-bem-fti.png"
+            alt="Logo BEM KM FTI UNAND"
+            class="navbar-logo"
+        >
+
+        <span class="logo-text">
+            FTI <span>Relations</span>
+        </a>
+
+        <nav class="nav-menu">
+            <a href="project.html">Beranda</a>
+            <a href="directory.html" class="active">Direktori BEM</a>
+            <a href="dokumentasi.html">Dokumentasi</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Judul Halaman -->
+        <section class="directory-hero">
+            <p class="section-label">EXTERNAL RELATIONS</p>
+
+            <h1>Direktori Organisasi</h1>
+
+            <p>
+                Kenali organisasi mahasiswa yang telah menjadi bagian
+                dari perjalanan BEM Visit BEM KM FTI UNAND.
+            </p>
+        </section>
+
+        <!-- Direktori BEM -->
+        <section class="directory-section">
+
+            <!-- Judul dan jumlah organisasi -->
+            <div class="directory-heading">
+                <h2>Daftar Kunjungan</h2>
+
+                <p id="jumlah-organisasi">
+                    Memuat data organisasi...
+                </p>
+            </div>
+
+            <!-- Kolom pencarian -->
+            <input
+                type="text"
+                id="search-bem"
+                placeholder="Cari nama BEM atau universitas..."
+                aria-label="Cari nama BEM atau universitas"
+            >
+
+            <!-- Kartu BEM dari JavaScript -->
+            <div class="directory-grid" id="daftar-bem"></div>
+
+            <!-- Pesan jika pencarian tidak menemukan hasil -->
+            <p id="pesan-kosong" class="empty-message" hidden>
+                Organisasi yang kamu cari tidak ditemukan.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 FTI External Relations Directory</p>
+        <p>Dinas Eksternal BEM KM FTI UNAND</p>
+    </footer>
+      <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas" title="Kembali ke atas">
+        ↑
+      </button>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+    <script src="directory.js"></script>
+
+</body>
+</html>
